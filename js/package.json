@@ -17,6 +17,7 @@
     "bootstrap": "lerna link && lerna bootstrap",
     "build": "lerna run build --ignore=token-entangler --ignore=candy-machine-ui",
     "build-web": "lerna run build --stream --scope @oyster/common --scope web",
+    "export": "lerna run export --scope web",
     "start": "cross-env CI=true lerna run start --scope @oyster/common --stream --parallel --scope web",
     "lint": "prettier -c 'packages/*/{src,test}/**/*.{ts,tsx}' && npm run lint:eslint",
     "lint:eslint": "eslint 'packages/*/{src,test}/**/*.{ts,tsx}'",
