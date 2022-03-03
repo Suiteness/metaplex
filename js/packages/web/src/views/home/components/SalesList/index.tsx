@@ -45,7 +45,7 @@ export const SalesListView = (props: { collectionMintFilter?: string }) => {
         <Banner
           src="/images/tripdrop.svg"
           headingText="Book experiences without risk"
-          subHeadingText="Discover, book, and sell tickets, dining, and stays"
+          subHeadingText="Discover and book tickets, dining, and stays. Resell them if something comes up."
           actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
           useBannerBg
         />

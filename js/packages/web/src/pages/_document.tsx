@@ -41,7 +41,7 @@ export default class MetaplexDocument extends Document {
             src="https://platform.twitter.com/widgets.js"
             charSet="utf-8"
           />
-          <script
+          {/*          <script
             type="text/javascript"
             dangerouslySetInnerHTML={{
               __html: `
@@ -52,7 +52,7 @@ export default class MetaplexDocument extends Document {
                 })();
           `,
             }}
-          />
+          />*/}
         </body>
       </Html>
     );
