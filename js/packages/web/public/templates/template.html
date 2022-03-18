@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TripDrop - Book tickets, dining, and stays</title>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <meta name="description" content="The marketplace for real life experiences facilitated with the blockchain">
+  <meta property="og:title" content="TripDrop - Discover, book, and sell vacations">
+  <meta property="og:description" content="The marketplace for real life experiences facilitated with the blockchain ">
+  <meta property="og:image" content="https://www.tripdrop/images/tripdrop.svg">
+  <meta property="og:image:alt" content="TripDrop Logo">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.tripdrop.io">
+  <link rel="canonical" href="https://www.tripdrop.io">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#FF00FF">
+
+  <style type="text/css">
+    body {
+      height: 100vh;
+      display: flex;
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+      flex-wrap: wrap;
+      margin: 1.25rem;
+    }
+
+    a {
+      color: rgb(74 144 226);
+    }
+
+    .tripdrop-logo {
+      height: 2.5rem;
+    }
+
+    p {
+      font-family: sans-serif;
+      margin-top: 0;
+    }
+
+    img.hero {
+      height: 6rem;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .ticket, .stay, .dine {
+      width: 100%;
+      background-color: white;
+      color: black;
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .ticket::before, .stay::before, .dine::before, .ticket::after, .stay::after, .dine::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 1.5rem);
+      height: 2rem;
+      width: 3rem;
+      display: block;
+      background-color: #121212;
+      transform: scaleX(2) scaleY(.75);
+    }
+
+    .ticket::before, .stay::before, .dine::before {
+      top: -1rem;
+      border-radius: 0 0 2rem 2rem;
+    }
+
+    .ticket::after, .stay::after, .dine::after {
+      bottom: -1rem;
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    h1 {
+      margin-top: .75rem;
+    }
+
+    h2 {
+      margin-left: .75rem;
+      margin-bottom: 1rem;
+      width: calc(50% - 1rem);
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    label, .time {
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: gray;
+    }
+
+    .datetime {
+      width: calc(50% - 1rem);
+      text-align: right;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: .75rem;
+    }
+
+    .time, .date {
+      margin-bottom: 0;
+    }
+
+    .map {
+      width: 100%;
+      height: 24rem;
+      padding-bottom: 1.25rem;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><img class="tripdrop-logo" src="images/tripdrop.svg"></h1>
+
+  <div class="ticket">
+    <h2>Show Name</h2>
+    <div class="datetime">
+      <p class="time">Time</p>
+      <p class="date">Date</p>
+    </div>
+    
+    <picture>
+      <source srcset="images/show.jpg" type="image/jpg">
+      <img class="hero" src="images/show.jpg">
+    </picture>
+
+    <ul>
+      <li>
+        <label>Event</label>
+        <p>Event Name</p>
+      </li>
+
+      <li>
+        <label>Ticket</label>
+        <p>Ticket Name</p>
+      </li>
+
+      <li>
+        <label>Venue</label>
+        <p>Venue Name</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="stay">
+    <h2>Hotel Name</h2>
+    <div class="datetime">
+      <p class="time">&nbsp</p>
+      <p class="date">Check in - Check out</p>
+    </div>
+    
+    <picture>
+      <source srcset="images/stay.jpg" type="image/jpg">
+      <img class="hero" src="images/stay.jpg">
+    </picture>
+
+    <ul>
+      <li>
+        <label>Hotel</label>
+        <p>Hotel Name</p>
+      </li>
+
+      <li>
+        <label>Suite</label>
+        <p>Suite Name</p>
+      </li>
+
+      <li>
+        <label>Description</label>
+        <p>Hotel & Suite Description</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dine">
+    <h2>Restaurant Name</h2>
+    
+    <picture>
+      <source srcset="images/dine.jpg" type="image/jpg">
+      <img class="hero" src="images/dine.jpg">
+    </picture>
+
+    <ul>
+      <li>
+        <label>Meal</label>
+        <p>Dinner for X</p>
+      </li>
+
+      <li>
+        <label>Appetizer</label>
+        <p>Appetizer Name</p>
+      </li>
+
+      <li>
+        <label>Entree</label>
+        <p>Entree Name</p>
+      </li>
+    </ul>
+  </div>
+
+  <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=1024x1024&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyCw3HqKzKaCRoSM04W3Xr_v0WWnJGRyEUM">
+</body>
+</html>

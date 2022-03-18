@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Metaplex NFT Marketplace</title>
+        <title>TripDrop - Book tickets, dining, and stays</title>
       </Head>
       <div id="root">
         <Component {...pageProps} />
